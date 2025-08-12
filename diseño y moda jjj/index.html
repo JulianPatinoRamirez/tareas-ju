@@ -1,22 +1,19 @@
-<!DOCTYPE html> <!--Define que trabajaremos una estructura html-->
-<html lang="es"> <!---Indica el lenguaje que usa la pagina -->
+<!DOCTYPE html> <!--Define que trabajaremos una estructtura HTML-->
+<html lang="es"> <!--Indica el lenguaje que usa la pagina -->
 
-<head> <!--Inicio de la cabecera del sitio web-->
-    <meta charset="UTF-8">
-    <!--se utiliza en el encabezado (<head>) de un documento HTML para especificar la codificación de caracteres que usará la página web.-->
+<head> <!--Inicio de la cebecera del sitio web-->
+    <meta charset="UTF-8"><!--Sin esta línea, el navegador podría interpretar mal los caracteres especiales. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--se usa para controlar cómo se muestra una página web en dispositivos móviles y tabletas.-->
-    <title>Título del proyecto</title>
-    <!--se coloca dentro de la etiqueta <head> de un documento HTML y define el título de la página web, es decir, el texto que aparece en la pestaña del navegador o en los resultados de búsqueda de Google-->
+    <!--Esta etiqueta permite que las páginas web se vean correctamente en pantallas de diferentes tamaños, especialmente en teléfonos móviles y tabletas.-->
+    <title>Título del proyecto</title><!--La etiqueta <title> sirve para establecer el título de una página web. -->
 
     <!-- Bootstrap CSS -->
-    <!--No tiene efecto en el funcionamiento del código, pero sirve para anotar o aclarar algo dentro del documento.-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--sirve para incluir la hoja de estilos (CSS) de Bootstrap en tu página web desde un servidor externo (CDN).-->
+    <!--Se usa para cargar estilos predefinidos, como botones, columnas, menús, tarjetas, colores, márgenes, etc.-->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Diseño y moda jjj</a>
+            <a class="navbar-brand" href="index.html">diseño y moda jjj</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,77 +23,115 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Quiénes Somos</a>
+                        <a class="nav-link" href="Quienes somos.html">Quiénes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="comprar.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-</head> <!--se usa para cerrar la sección <head> del documento.-->
+</head><!--es la etiqueta de cierre de la sección <head> en un documento HTML-->
 
 <body>
-    <!--se utiliza para definir el contenido visible de una página web, es decir, todo lo que el usuario ve y con lo que puede interactuar.-->
+    <!--marca el inicio del cuerpo de una página web, es decir, todo el contenido visible que el usuario verá en su navegador: texto, imágenes, botones, menús, formularios, videos, etc.-->
     <!-- Hero Section -->
     <header class="bg-light text-dark text-center py-5" id="inicio">
         <div class="container">
-            <h1 class="display-4">Título principal atractivo</h1>
+            <h1 class="display-4">Diseño y moda JJJ</h1>
             <p class="lead">Diseño y Moda JJJ es una tienda de ropa moderna que combina elegancia, creatividad y
                 tendencia. Nuestro objetivo es ofrecer prendas únicas que reflejen tu estilo personal, sin perder
                 comodidad ni calidad. Desde conjuntos casuales hasta outfits sofisticados para ocasiones especiales, en
                 JJJ creemos que la moda es una forma de expresión. Nuestra colección está cuidadosamente diseñada para
-                quienes buscan destacar con confianza y autenticidad..</p>
+                quienes buscan destacar con confianza y autenticidad.</p>
             <a class="btn btn-primary btn-lg" href="#servicios">Saber más</a>
         </div>
     </header>
+
     <!-- Contenido Destacado -->
     <section class="container py-5" id="servicios">
         <div class="row">
             <!-- Tarjeta 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/jjj p.jpg" class="card-img-top">
+                    <img src="img/111.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">productos</h5>
-                        <p class="card-text">productos nike de exelente calidad, venga y compruebe.</p>
+                        <h5 class="card-title">Nike</h5>
+                        <p class="card-text">Productos nike de exelente calidad y a los mejores precios</p>
                     </div>
                 </div>
             </div>
             <!-- Tarjeta 2 (replicar según necesidad) -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="img/222.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas</h5>
+                        <p class="card-text">Productos adidas importados desde EE.UU, de la mejor calidad y precio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+                    <img src="img/333.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Puma</h5>
+                        <p class="card-text">Productos puma importados desde vietnam, de la mejor calidad y precio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+    
+
+    <!-- Contenido Destacado -->
+    <section class="container py-5" id="servicios">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            
+            <!-- Tarjeta 2 (replicar según necesidad) -->
         </div>
     </section>
-
-    <!-- Nosotros -->
+    
     <section class="bg-secondary text-white py-5" id="nosotros">
-        <div class="container text-center">
-            <h2>Sobre Nosotros</h2>
-            <p>Descripción breve del proyecto o el equipo detrás del mismo.</p>
-        </div>
-    </section>
+  <div class="container text-center">
+    <h2>Nosotros</h2>
+    <p>Nosotros manejamos los mejores productos y tambien son importados desde otro paises para que nuestros clientes esten a gusto con su compra</p>
+  </div>
+</section>
 
-    <!-- Contacto -->
-    <section class="container py-5" id="contacto">
-        <h2>Contáctanos</h2>
-        <form>
-            <input type="text" class="form-control mb-3" placeholder="Nombre">
-            <input type="email" class="form-control mb-3" placeholder="Email">
-            <textarea class="form-control mb-3" placeholder="Mensaje"></textarea>
-            <button class="btn btn-primary">Enviar</button>
-        </form>
-    </section>
+
+
+<!-- Contacto -->
+<section class="container py-5" id="contacto">
+  <h2>Contáctanos</h2>
+  <form>
+    <input type="text" class="form-control mb-3" placeholder="Nombre">
+    <input type="email" class="form-control mb-3" placeholder="Email">
+    <textarea class="form-control mb-3" placeholder="Mensaje"></textarea>
+    <button class="btn btn-primary">Enviar</button>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        &copy; 2025 Nombre Proyecto | Todos los derechos reservados.
-    </footer>
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Nombre Proyecto | Todos los derechos reservados.
+</footer>
 
-</body> <!-- marca el final del contenido visible de una página web. Cierra la sección que empezó con <body>-->
+<!-- CSS Personalizado -->
+<link rel="stylesheet" href="css/style.css">
 
-</html> <!--marca el final de todo el documento HTML.-->
+
+
+
+
+
+</body><!--es la etiqueta de cierre del <body>, y marca el final del contenido visible de la página web.-->
+
+</html><!--es la etiqueta de cierre de un documento HTML. Indica que termina todo el contenido HTML de la página web.-->
